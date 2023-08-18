@@ -1,0 +1,26 @@
+{
+  "name": "font",
+  "description": "Collection of custom Open Source fonts.",
+  "private": true,
+  "license": "MIT",
+  "author": "Matthias Giger",
+  "type": "module",
+  "scripts": {
+    "convert": "node convert.js"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "workspaces": [
+    "metica",
+    "monua",
+    "tobua"
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.26.2",
+    "fontmin": "^1.0.1"
+  }
+}

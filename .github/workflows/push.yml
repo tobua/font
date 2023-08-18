@@ -1,0 +1,23 @@
+name: push
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  convert-release:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install --legacy-peer-deps
+      - name: 🚧 Convert font source files
+        run: npm run convert
+      - run: npm install -g npm@latest
+      - name: 📢 Release all packages using changesets
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

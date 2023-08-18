@@ -1,0 +1,29 @@
+{
+  "name": "tobua",
+  "description": "Tobua brand specific custom font.",
+  "version": "0.1.0",
+  "repository": "github:tobua/font",
+  "license": "MIT",
+  "author": "Matthias Giger",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./tobua.woff2",
+  "exports": {
+    ".": "./tobua.woff2",
+    "./otf": "./tobua.otf"
+  },
+  "files": [
+    "*.woff2",
+    "*.otf"
+  ],
+  "keywords": [
+    "font",
+    "tobua",
+    "web",
+    "creative",
+    "custom"
+  ],
+  "publishConfig": {
+    "provenance": false
+  }
+}

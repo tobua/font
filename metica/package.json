@@ -1,0 +1,29 @@
+{
+  "name": "metica",
+  "description": "Rounded sans-serif font.",
+  "version": "0.1.0",
+  "repository": "github:tobua/font",
+  "license": "MIT",
+  "author": "Matthias Giger",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./metica.woff2",
+  "exports": {
+    ".": "./metica.woff2",
+    "./otf": "./metica.otf"
+  },
+  "files": [
+    "*.woff2",
+    "*.otf"
+  ],
+  "keywords": [
+    "font",
+    "metica",
+    "web",
+    "sans-serif",
+    "rounded"
+  ],
+  "publishConfig": {
+    "provenance": false
+  }
+}
