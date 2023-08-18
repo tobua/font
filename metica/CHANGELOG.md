@@ -1,5 +1,11 @@
 # metica
 
+## 0.1.3
+
+### Patch Changes
+
+- 3a02e59: Fixed npm publish command.
+
 ## 0.1.2
 
 ### Patch Changes
