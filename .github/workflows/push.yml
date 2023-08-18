@@ -19,6 +19,8 @@ jobs:
       - run: npm install -g npm@latest
       - name: 📢 Release all packages using changesets
         uses: changesets/action@v1
+        with:
+          publish: npm release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
