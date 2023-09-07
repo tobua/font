@@ -13,14 +13,14 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
-      - run: npm install --legacy-peer-deps
+      - run: npm install
       - name: 🚧 Convert font source files
         run: npm run convert
       - run: npm install -g npm@latest
       - name: 📢 Release all packages using changesets
         uses: changesets/action@v1
         with:
-          publish: npm publish --workspaces
+          publish: npm publish --workspaces --provenance
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

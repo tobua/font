@@ -6,15 +6,38 @@
   "license": "MIT",
   "author": "Matthias Giger",
   "type": "module",
-  "sideEffects": false,
+  "sideEffects": true,
   "main": "./tobua.woff2",
+  "types": "./types/tobua.d.ts",
   "exports": {
-    ".": "./tobua.woff2",
-    "./otf": "./tobua.otf"
+    ".": {
+      "default": {
+        "types": "./types/tobua.d.ts",
+        "default": "./tobua.woff2"
+      }
+    },
+    "./otf": {
+      "default": {
+        "types": "./types/tobua-otf.d.ts",
+        "default": "./tobua.otf"
+      }
+    },
+    "./ttf": {
+      "default": {
+        "types": "./types/tobua-ttf.d.ts",
+        "default": "./tobua.ttf"
+      }
+    },
+    "./woff": {
+      "default": {
+        "types": "./types/tobua-woff.d.ts",
+        "default": "./tobua.woff"
+      }
+    }
   },
   "files": [
-    "*.woff2",
-    "*.otf"
+    "*",
+    "types"
   ],
   "keywords": [
     "font",
@@ -24,6 +47,6 @@
     "custom"
   ],
   "publishConfig": {
-    "provenance": false
+    "provenance": true
   }
 }

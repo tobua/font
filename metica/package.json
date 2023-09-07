@@ -6,15 +6,38 @@
   "license": "MIT",
   "author": "Matthias Giger",
   "type": "module",
-  "sideEffects": false,
+  "sideEffects": true,
   "main": "./metica.woff2",
+  "types": "./types/metica.d.ts",
   "exports": {
-    ".": "./metica.woff2",
-    "./otf": "./metica.otf"
+    ".": {
+      "default": {
+        "types": "./types/metica.d.ts",
+        "default": "./metica.woff2"
+      }
+    },
+    "./otf": {
+      "default": {
+        "types": "./types/metica-otf.d.ts",
+        "default": "./metica.otf"
+      }
+    },
+    "./ttf": {
+      "default": {
+        "types": "./types/metica-ttf.d.ts",
+        "default": "./metica.ttf"
+      }
+    },
+    "./woff": {
+      "default": {
+        "types": "./types/metica-woff.d.ts",
+        "default": "./metica.woff"
+      }
+    }
   },
   "files": [
-    "*.woff2",
-    "*.otf"
+    "*",
+    "types"
   ],
   "keywords": [
     "font",
@@ -24,6 +47,6 @@
     "rounded"
   ],
   "publishConfig": {
-    "provenance": false
+    "provenance": true
   }
 }
