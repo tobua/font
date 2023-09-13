@@ -1,5 +1,11 @@
 # monua
 
+## 0.3.0
+
+### Minor Changes
+
+- 6eaca5b: Use newest fonts and add CSS style export
+
 ## 0.2.0
 
 ### Minor Changes
