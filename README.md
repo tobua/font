@@ -1,4 +1,6 @@
-<img align="center" src="https://github.com/tobua/font/raw/main/logo.png" width="60%" alt="tobua/font logo" />
+<p align="center">
+  <img src="https://github.com/tobua/font/raw/main/logo.png" width="60%" alt="tobua/font logo" />
+</p>
 
 # font
 

@@ -33,6 +33,12 @@
         "types": "./types/monua-woff.d.ts",
         "default": "./monua.woff"
       }
+    },
+    "./style": {
+      "default": {
+        "types": "./types/monua-style.d.ts",
+        "default": "./monua.js"
+      }
     }
   },
   "files": [

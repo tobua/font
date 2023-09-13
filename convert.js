@@ -21,7 +21,7 @@ fontmin.run(function (error, files) {
   })
 })
 
-console.log('Generating types...')
+console.log('Generating types and CSS...')
 
 const fonts = ['metica', 'monua', 'tobua']
 const formats = ['woff2', 'otf', 'ttf', 'woff']
@@ -30,6 +30,14 @@ const typeScriptModule = (exportName, format) =>
   const ${format}: string
   export default ${format}
 }`
+
+const cssStyle = (name) => `import ${name} from '${name}'
+import ${name}Otf from '${name}/otf'
+
+export default \`@font-face {
+  font-family: '${name}';
+  src: url('\$\{${name}\}') format('woff2'), url('\$\{${name}Otf\}') format('opentype');
+}\``
 
 fonts.forEach((fontName) => {
   // Ensure directory exists.
@@ -50,4 +58,15 @@ fonts.forEach((fontName) => {
       moduleTemplate
     )
   })
+
+  // One CSS file for each font.
+  const styleTemplate = cssStyle(fontName)
+
+  writeFileSync(join(process.cwd(), fontName, `${fontName}.js`), styleTemplate)
+
+  writeFileSync(
+    join(process.cwd(), fontName, 'types', `${fontName}-style.d.ts`),
+    `declare const _default: string;
+export default _default;`
+  )
 })

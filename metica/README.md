@@ -20,6 +20,14 @@ ReactDOM.createRoot(document.body).render(
 )
 ```
 
+Alternatively, the `metica/css` import can be used with pre-generated style tag content that includes the font in woff2 and otf.
+
+```jsx
+import meticaStyle from 'metica/style'
+
+const Head = <style>{meticaStyle}</style>
+```
+
 ## CSS Modules (Vite)
 
 ```css

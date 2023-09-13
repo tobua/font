@@ -20,6 +20,14 @@ ReactDOM.createRoot(document.body).render(
 )
 ```
 
+Alternatively, the `tobua/css` import can be used with pre-generated style tag content that includes the font in woff2 and otf.
+
+```jsx
+import tobuaStyle from 'tobua/style'
+
+const Head = <style>{tobuaStyle}</style>
+```
+
 ## CSS Modules (Vite)
 
 ```css

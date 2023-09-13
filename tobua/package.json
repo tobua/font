@@ -33,6 +33,12 @@
         "types": "./types/tobua-woff.d.ts",
         "default": "./tobua.woff"
       }
+    },
+    "./style": {
+      "default": {
+        "types": "./types/tobua-style.d.ts",
+        "default": "./tobua.js"
+      }
     }
   },
   "files": [

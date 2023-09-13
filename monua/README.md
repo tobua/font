@@ -20,6 +20,14 @@ ReactDOM.createRoot(document.body).render(
 )
 ```
 
+Alternatively, the `monua/css` import can be used with pre-generated style tag content that includes the font in woff2 and otf.
+
+```jsx
+import monuaStyle from 'monua/style'
+
+const Head = <style>{monuaStyle}</style>
+```
+
 ## CSS Modules (Vite)
 
 ```css

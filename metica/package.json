@@ -33,6 +33,12 @@
         "types": "./types/metica-woff.d.ts",
         "default": "./metica.woff"
       }
+    },
+    "./style": {
+      "default": {
+        "types": "./types/metica-style.d.ts",
+        "default": "./metica.js"
+      }
     }
   },
   "files": [
