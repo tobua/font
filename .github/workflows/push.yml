@@ -18,8 +18,9 @@ jobs:
         run: npm run convert
       - name: 📢 Release updated packages using changesets
         uses: changesets/action@v1
+        # Requires --workspace monua tobua to list packages when not all are updated.
         with:
-          publish: npm publish --workspace shica
+          publish: npm publish --workspaces --provenance
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

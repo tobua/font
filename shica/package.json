@@ -53,6 +53,6 @@
     "rounded"
   ],
   "publishConfig": {
-    "provenance": false
+    "provenance": true
   }
 }
