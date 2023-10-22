@@ -19,7 +19,7 @@ jobs:
       - name: 📢 Release updated packages using changesets
         uses: changesets/action@v1
         with:
-          publish: npm publish --workspaces
+          publish: npm publish --workspace shica
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
