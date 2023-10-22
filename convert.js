@@ -23,7 +23,7 @@ fontmin.run(function (error, files) {
 
 console.log('Generating types and CSS...')
 
-const fonts = ['metica', 'monua', 'tobua']
+const fonts = ['metica', 'monua', 'shica', 'tobua']
 const formats = ['woff2', 'otf', 'ttf', 'woff']
 const typeScriptModule = (exportName, format) =>
   `declare module '${exportName}' {

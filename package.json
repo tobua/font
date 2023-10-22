@@ -17,6 +17,7 @@
   "workspaces": [
     "metica",
     "monua",
+    "shica",
     "tobua"
   ],
   "dependencies": {

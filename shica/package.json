@@ -1,0 +1,58 @@
+{
+  "name": "shica",
+  "description": "Shape + Helvetica font.",
+  "version": "0.0.0",
+  "repository": "github:tobua/font",
+  "license": "MIT",
+  "author": "Matthias Giger",
+  "type": "module",
+  "sideEffects": true,
+  "main": "./shica.woff2",
+  "types": "./types/shica.d.ts",
+  "exports": {
+    ".": {
+      "default": {
+        "types": "./types/shica.d.ts",
+        "default": "./shica.woff2"
+      }
+    },
+    "./otf": {
+      "default": {
+        "types": "./types/shica-otf.d.ts",
+        "default": "./shica.otf"
+      }
+    },
+    "./ttf": {
+      "default": {
+        "types": "./types/shica-ttf.d.ts",
+        "default": "./shica.ttf"
+      }
+    },
+    "./woff": {
+      "default": {
+        "types": "./types/shica-woff.d.ts",
+        "default": "./shica.woff"
+      }
+    },
+    "./style": {
+      "default": {
+        "types": "./types/shica-style.d.ts",
+        "default": "./shica.js"
+      }
+    }
+  },
+  "files": [
+    "*",
+    "types"
+  ],
+  "keywords": [
+    "font",
+    "shica",
+    "web",
+    "sans-serif",
+    "rounded"
+  ],
+  "publishConfig": {
+    "provenance": false
+  }
+}

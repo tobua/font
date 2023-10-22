@@ -16,11 +16,10 @@ jobs:
       - run: npm install
       - name: 🚧 Convert font source files
         run: npm run convert
-      - run: npm install -g npm@latest
-      - name: 📢 Release all packages using changesets
+      - name: 📢 Release updated packages using changesets
         uses: changesets/action@v1
         with:
-          publish: npm publish --workspaces --provenance
+          publish: npm publish --workspaces
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -8,6 +8,7 @@ Collection of free custom fonts created with Figma. More details on the [process
 
 - **metica** Rounded sans-serif font [Package Code](https://github.com/tobua/font/tree/main/metica) [npm](https://npmjs.com/metica)
 - **monua** Monospace font for Web Development [Package Code](https://github.com/tobua/font/tree/main/monua) [npm](https://npmjs.com/monua)
+- **shica** **Sh**ape + Helvet**ica** font [Package Code](https://github.com/tobua/font/tree/main/shica) [npm](https://npmjs.com/shica)
 - **tobua** Brand specific custom font [Package Code](https://github.com/tobua/font/tree/main/tobua) [npm](https://npmjs.com/tobua)
 
 ## Development
